@@ -1,5 +1,5 @@
 src_lang: mar_Deva tgt_lang: eng_Latn ai4bharat/indictrans2-indic-en-dist-200M
-86
+89
   exec_task: pdf_cid_info 
   exec_task: pdf_cid_reader 
   exec_task: word_recognizer 
@@ -35,4 +35,78 @@ NotFound sakalmarathi 54
   exec_task: line_finder 
   exec_task: para_finder 
 **** PIPEERROR IN 202402291549090610.pdf --> para 202402291549090610.pdf:Page_idx: 1 1 <-> [(0, 14), (0, 15)]
-#docs: 86 #processed: 3
+  exec_task: pdf_cid_info 
+  exec_task: pdf_cid_reader 
+	202403121202550010.pdf missing_cmaps: dvotsurekhmrbold, dvotsurekhmr, nirmalaui
+  exec_task: word_recognizer 
+	Tesseract on page: 3
+  exec_task: pdftable_finder 
+	==Total:69 Errors=69 TableEmptyBodyCellError=69
+  exec_task: line_finder 
+  exec_task: para_finder 
+  exec_task: extract_order_number 
+	extract_order_number:202403121202550010.pdf: >शासन निर्णय क्रमांक< >केव्हीबी-२०२३/प्र.क्र.१७०/उद्योग-६.<
+	elapsed_time:202403121202550010.pdf: 0.000117
+  exec_task: doc_translator_hf 
+    Paras: #64 Sentences: #0
+	[0]  #words: 264 #sentences: 53
+	After generate: 3 MB
+	[1]  #words: 263 #sentences: 23
+	After generate: 3 MB
+	[2]  #words: 137 #sentences: 8
+	After generate: 3 MB
+  exec_task: text_writer 
+  exec_task: pdf_cid_info 
+  exec_task: pdf_cid_reader 
+	202403121418487610.pdf missing_cmaps: dvotsurekhmrbold, mangalbold, dvotsurekhmr, nirmalaui
+  exec_task: word_recognizer 
+	Tesseract on page: 3
+	Tesseract on page: 4
+	Tesseract on page: 5
+	Tesseract on page: 6
+	Tesseract on page: 7
+	Tesseract on page: 8
+  exec_task: pdftable_finder 
+	==Total:218 Errors=218 TableEmptyBodyCellError=218
+  exec_task: line_finder 
+  exec_task: para_finder 
+  exec_task: extract_order_number 
+	extract_order_number:202403121418487610.pdf: >शासन निर्णय क्रमांक< >एमएलआय ०७१७/प्र. क्र. २०/कामगार-६<
+	elapsed_time:202403121418487610.pdf: 0.000110
+  exec_task: doc_translator_hf 
+    Paras: #83 Sentences: #0
+	[0]  #words: 262 #sentences: 55
+	After generate: 3 MB
+	[1]  #words: 268 #sentences: 25
+	After generate: 3 MB
+	[2]  #words: 259 #sentences: 20
+	After generate: 3 MB
+	[3]  #words: 158 #sentences: 11
+	After generate: 3 MB
+  exec_task: text_writer 
+  exec_task: pdf_cid_info 
+  exec_task: pdf_cid_reader 
+	202403121435485710.pdf missing_cmaps: nirmalaui, mangalbold, dvotsurekhmr, sakalmarathinormal, dvotsurekhmrbold
+  exec_task: word_recognizer 
+	Tesseract on page: 0
+	Tesseract on page: 1
+	Tesseract on page: 2
+  exec_task: pdftable_finder 
+	==Total:12 Errors=12 TableEmptyBodyCellError=12
+  exec_task: line_finder 
+  exec_task: para_finder 
+  exec_task: extract_order_number 
+	extract_order_number:202403121435485710.pdf: >शासन निर्णय क्रमांक< >संकिर्ण-२०२४/प्र.क्र.०४/ऊर्जा-५<
+	elapsed_time:202403121435485710.pdf: 0.000112
+  exec_task: doc_translator_hf 
+    Paras: #54 Sentences: #18
+	[0]  #words: 102 #sentences: 13
+	After generate: 3 MB
+	[0]  #words: 257 #sentences: 55
+	After generate: 11 MB
+	[1]  #words: 268 #sentences: 22
+	After generate: 11 MB
+	[2]  #words: 117 #sentences: 5
+	After generate: 11 MB
+  exec_task: text_writer 
+#docs: 89 #processed: 6
