@@ -1,5 +1,5 @@
 src_lang: mar_Deva tgt_lang: eng_Latn ai4bharat/indictrans2-indic-en-dist-200M
-116
+118
   exec_task: pdf_cid_info 
   exec_task: pdf_cid_reader 
   exec_task: word_recognizer 
@@ -37,48 +37,47 @@ NotFound sakalmarathi 54
 **** PIPEERROR IN 202402291549090610.pdf --> para 202402291549090610.pdf:Page_idx: 1 1 <-> [(0, 14), (0, 15)]
   exec_task: pdf_cid_info 
   exec_task: pdf_cid_reader 
-	202403191317326610.pdf missing_cmaps: nirmalaui
+	202403201320281910.pdf missing_cmaps: sakalmarathinormal, nirmalaui
+  exec_task: word_recognizer 
+	Tesseract on page: 0
+	Tesseract on page: 1
+	Tesseract on page: 2
+  exec_task: pdftable_finder 
+	==Total:97 Errors=97 TableEmptyBodyCellError=97
+  exec_task: line_finder 
+  exec_task: para_finder 
+  exec_task: extract_order_number 
+	extract_order_number:202403201320281910.pdf: Unable to find order
+	elapsed_time:202403201320281910.pdf: 0.000030
+  exec_task: doc_translator_hf 
+    Paras: #33 Sentences: #65
+	[0]  #words: 139 #sentences: 50
+	After generate: 5 MB
+	[0]  #words: 259 #sentences: 50
+	After generate: 11 MB
+	[1]  #words: 78 #sentences: 3
+	After generate: 11 MB
+  exec_task: text_writer 
+  exec_task: pdf_cid_info 
+  exec_task: pdf_cid_reader 
+	202403201707331610.pdf missing_cmaps: sakalmarathinormal, nirmalaui
   exec_task: word_recognizer 
   exec_task: pdftable_finder 
 	==Total:0 Errors=0 
   exec_task: line_finder 
   exec_task: para_finder 
   exec_task: extract_order_number 
-	extract_order_number:202403191317326610.pdf: >शासन आदेश क्रमांक< >नियुक्ती-२०२३/प्र.क.२१५/काम-८<
-	elapsed_time:202403191317326610.pdf: 0.000119
+	extract_order_number:202403201707331610.pdf: >शासन आदेश क्रमांक< >संकीर्ण-२०२४/प्र.क्र. ३/उद्योग-३<
+	elapsed_time:202403201707331610.pdf: 0.000084
   exec_task: doc_translator_hf 
-    Paras: #93 Sentences: #86
-	[0]  #words: 130 #sentences: 66
-	After generate: 3 MB
-	[0]  #words: 264 #sentences: 61
-	After generate: 3 MB
-	[1]  #words: 264 #sentences: 28
-	After generate: 3 MB
-	[2]  #words: 245 #sentences: 24
-	After generate: 3 MB
+    Paras: #75 Sentences: #42
+	[0]  #words: 74 #sentences: 28
+	After generate: 11 MB
+	[0]  #words: 257 #sentences: 57
+	After generate: 11 MB
+	[1]  #words: 266 #sentences: 26
+	After generate: 11 MB
+	[2]  #words: 218 #sentences: 16
+	After generate: 11 MB
   exec_task: text_writer 
-  exec_task: pdf_cid_info 
-  exec_task: pdf_cid_reader 
-	202403191318301910.pdf missing_cmaps: nirmalaui
-  exec_task: word_recognizer 
-  exec_task: pdftable_finder 
-	==Total:1 Errors=1 TableEmptyBodyCellError=1
-  exec_task: line_finder 
-  exec_task: para_finder 
-  exec_task: extract_order_number 
-	extract_order_number:202403191318301910.pdf: >शासन आदेश क्रमांक< >नियुक्ती-२०२३/प्र.क.२१६/काम-८<
-	elapsed_time:202403191318301910.pdf: 0.000075
-  exec_task: doc_translator_hf 
-    Paras: #86 Sentences: #295
-	[0]  #words: 257 #sentences: 170
-	After generate: 4 MB
-	[1]  #words: 107 #sentences: 25
-	After generate: 4 MB
-	[0]  #words: 259 #sentences: 58
-	After generate: 4 MB
-	[1]  #words: 265 #sentences: 27
-	After generate: 4 MB
-	[2]  #words: 178 #sentences: 16
-	After generate: 4 MB
-  exec_task: text_writer 
-#docs: 116 #processed: 5
+#docs: 118 #processed: 5
